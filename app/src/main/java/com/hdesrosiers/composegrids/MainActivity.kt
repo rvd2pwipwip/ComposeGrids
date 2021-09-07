@@ -43,7 +43,7 @@ val data = listOf("Item 1", "Item 2", "Item 3", "Item 4", "Item 5")
 fun FixedLazyVerticalGrid() {
   LazyVerticalGrid(
     cells = GridCells.Fixed(count = 3),
-    contentPadding = PaddingValues(8.dp)
+    contentPadding = PaddingValues(horizontal = 30.dp, vertical = 10.dp)
   ) {
     items(data.size) { item ->
       Card(
@@ -66,7 +66,7 @@ fun FixedLazyVerticalGrid() {
 fun AdaptiveLazyVerticalGrid() {
   LazyVerticalGrid(
     cells = GridCells.Adaptive(minSize = 160.dp),
-    contentPadding = PaddingValues(8.dp)
+    contentPadding = PaddingValues(horizontal = 30.dp, vertical = 10.dp)
   ) {
     items(data.size) { item ->
       Card(
